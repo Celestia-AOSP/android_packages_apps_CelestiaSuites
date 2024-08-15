@@ -31,6 +31,12 @@
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
 
+    <!-- Google Play Integrity -->
+    <Preference
+         android:key="pif_json_file_preference"
+         android:title="@string/pif_spoofing_title"
+         android:summary="@string/pif_spoofing_summary"/>
+
     <!-- Unlock FPS for specific games -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.games"
