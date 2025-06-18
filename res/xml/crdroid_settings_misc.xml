@@ -31,13 +31,6 @@
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
 
-    <!-- Google Play Integrity -->
-    <Preference
-         android:key="pif_json_file_preference"
-         android:title="@string/pif_spoofing_title"
-         android:dependency="persist.sys.pixelprops.pi"
-         android:summary="@string/pif_spoofing_summary"/>
-
     <!-- Unlock FPS for specific games -->
     <!--com.crdroid.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.games"
@@ -56,6 +49,18 @@
        android:title="@string/gameprops_load_json_title"
        android:dependency="persist.sys.gameprops.enabled"
        android:summary="@string/gameprops_load_json_summary" />
+
+    <com.crdroid.settings.fragments.misc.KeyboxDataPreference
+        android:key="keybox_data_setting"
+        android:title="@string/keybox_data_title"
+        android:summary="@string/keybox_data_summary"
+        android:defaultValue=""/>
+
+    <Preference
+         android:key="pif_json_file_preference"
+         android:title="@string/pif_spoofing_title"
+         android:dependency="persist.sys.pixelprops.pi"
+         android:summary="@string/pif_spoofing_summary"/>
 
     <!-- displaying current PIF properties -->
     <Preference
