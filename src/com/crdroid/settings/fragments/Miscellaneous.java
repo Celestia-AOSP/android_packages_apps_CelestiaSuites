@@ -67,7 +67,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     private static final String POCKET_JUDGE = "pocket_judge";
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
-    private static final String SYS_PROP_OPTIONS_PI = "persist.sys.pixelprops.pi";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
     private static final String SYS_GAMEPROP_ENABLED = "persist.sys.gameprops.enabled";
@@ -79,7 +78,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private KeyboxDataPreference mKeyboxDataPreference;
 
     private Preference mPocketJudge;
-    private Preference mPropOptionsPi;
 
     private Preference mPifJsonFilePreference;
 
@@ -125,9 +123,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         }
     }
     );
-     
-        mPropOptionsPi = (Preference) findPreference(SYS_PROP_OPTIONS_PI);
-        mPropOptionsPi.setOnPreferenceChangeListener(this);
 
         mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
         boolean mPocketJudgeSupported = res.getBoolean(
@@ -282,7 +277,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mGamePropsSpoof || preference == mPropOptionsPi) {
+        if (preference == mGamePropsSpoof) {
                     SystemRestartUtils.showSystemRestartDialog(getContext());
             return true;
         }
