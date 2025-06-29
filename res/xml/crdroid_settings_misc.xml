@@ -38,32 +38,40 @@
         android:title="@string/use_games_spoof_title"
         android:summary="@string/use_games_spoof_summary" /-->
 
+	<!-- Game spoof -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
        android:key="persist.sys.gameprops.enabled"
+       android:icon="@drawable/ic_game_spoof"
        android:title="@string/gameprops_title"
        android:summary="@string/gameprops_summary"
        android:defaultValue="false" />
 
    <Preference
        android:key="game_props_json_file_preference"
+       android:icon="@drawable/ic_file_import"
        android:title="@string/gameprops_load_json_title"
        android:dependency="persist.sys.gameprops.enabled"
        android:summary="@string/gameprops_load_json_summary" />
 
+	<!-- Keybox -->
     <com.crdroid.settings.fragments.misc.KeyboxDataPreference
         android:key="keybox_data_setting"
+        android:icon="@drawable/ic_keybox"
         android:title="@string/keybox_data_title"
         android:summary="@string/keybox_data_summary"
         android:defaultValue=""/>
 
+	<!-- pif -->
     <Preference
          android:key="pif_json_file_preference"
+         android:icon="@drawable/ic_play_integrity_fix"
          android:title="@string/pif_spoofing_title"
          android:summary="@string/pif_spoofing_summary"/>
 
     <!-- displaying current PIF properties -->
     <Preference
          android:key="show_pif_properties"
+         android:icon="@drawable/ic_google"
          android:title="@string/show_pif_properties_title"
          android:summary="@string/show_pif_properties_summary"/>
 
