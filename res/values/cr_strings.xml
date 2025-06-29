@@ -21,6 +21,9 @@
     <string name="crdroid_settings_summary">Open goodness</string>
     <string name="reset_settings_title">Reset settings</string>
     <string name="reset_settings_message">This will reset most crdroid settings to their default values for the current user. Would you like to continue?</string>
+    <string name="gaming_category">Gaming</string>
+    <string name="spoofing_category">Spoofing</string>
+    <string name="other_category">Others</string>
 
     <!-- Personalization Categories -->
     <string name="button_title">Buttons</string>
