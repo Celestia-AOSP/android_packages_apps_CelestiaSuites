@@ -80,9 +80,9 @@ public class About extends SettingsPreferenceFragment {
         if (preference == mDonate) {
             launchUrl("https://crdroid.net/donate.php");
         } else if (preference == mSourceUrl) {
-            launchUrl("https://github.com/crdroidandroid");
+            launchUrl("https://github.com/Celestia-AOSP");
         } else if (preference == mTelegramUrl) {
-            launchUrl("https://t.me/crDroidAndroid");
+            launchUrl("https://t.me/CelestiaAOSPChats");
         } else if (preference == mShare) {
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SEND);
@@ -95,7 +95,7 @@ public class About extends SettingsPreferenceFragment {
         } else if (preference == mWebsite) {
             launchUrl("https://crdroid.net");
         } else if (preference == mTelegramChannelUrl) {
-            launchUrl("https://t.me/crDroidUpdates");
+            launchUrl("https://t.me/celestiaprjkt");
         } else if (preference == mSponsor) {
             launchUrl("https://www.scopehosts.com");
         } else if (preference == mBuildServerSponsor){
